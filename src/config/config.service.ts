@@ -7,9 +7,9 @@ export class ConfigService {
   constructor() {
     const envFile =
       process.env.NODE_ENV === 'prod'
-        ? 'env.prod'
+        ? 'prod.env'
         : process.env.NODE_ENV === 'dev'
-        ? 'env.dev'
+        ? 'dev.env'
         : '.env';
     this.envConfig = dotenv.parse(fs.readFileSync(envFile));
     const address = this.get('ADDRESS');
