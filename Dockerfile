@@ -12,4 +12,4 @@ FROM node:16-alpine
 WORKDIR /app
 COPY --from=builder /app ./
 ## application 실행
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start"]

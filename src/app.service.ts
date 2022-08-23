@@ -12,6 +12,6 @@ export class AppService {
   getHello(): string {
     const gpContractAddress = this.configureService.get('ADDRESS');
     this.logger.log('AppService > gpContractAddress : ' + gpContractAddress);
-    return 'DEVOPS, CI&CD DEPLOY FROM ECS';
+    return 'DEVOPS, CI&CD DEPLOY FROM ECS & ADD CONFIG';
   }
 }
